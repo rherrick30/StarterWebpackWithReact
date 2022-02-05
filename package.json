@@ -1,7 +1,7 @@
 {
-  "name": "rjh_music_site_redux",
+  "name": "sample_wp_react",
   "version": "1.0.0",
-  "description": "A music management and streaming server using Cory House's awesome starter kit",
+  "description": "This is a starter project that can be used as a baseline for new React projects",
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
     "clean:build": "rimraf ./build && mkdir build",
