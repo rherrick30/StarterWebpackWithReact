@@ -1,0 +1,92 @@
+{
+  "name": "rjh_music_site_redux",
+  "version": "1.0.0",
+  "description": "A music management and streaming server using Cory House's awesome starter kit",
+  "scripts": {
+    "build": "webpack --config webpack.config.prod.js",
+    "clean:build": "rimraf ./build && mkdir build",
+    "start:dev": "webpack-dev-server --config webpack.config.dev.js --port 3000",
+    "start": "  run-p start:dev",
+    "serve:build": "NODE_ENV=production node server.js"
+  },
+  "author": "Rob Herrick",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.21.2",
+    "bootstrap": "4.3.1",
+    "dotenv": "^8.6.0",
+    "eslint-loader": "^2.1.2",
+    "http-proxy-middleware": "^0.19.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-preset-react-app": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "eslint": "^5.15.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "npm-run-all": "^4.1.5",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.29.6",
+    "webpack-bundle-analyzer": "^3.9.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.7.1"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-react-app"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "rules": {
+      "no-debugger": "off",
+      "no-console": "off",
+      "no-unused-vars": "warn",
+      "react/prop-types": "warn"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "root": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rherrick30/RJHMusicWebsiteRedux"
+  }
+}
